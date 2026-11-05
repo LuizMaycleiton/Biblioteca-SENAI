@@ -67,24 +67,29 @@ header {
 
 
 
-.bisenai, .descobrir, .lugares, .cuidado {
+.bisenai,
+.descobrir,
+.lugares,
+.cuidado {
     font-weight: 1000;
     color: #DA251C;
     font-size: 1rem;
     text-transform: uppercase;
 }
 
-.conhecimento{
+.conhecimento {
     font-weight: 550;
     font-size: 32px;
     line-height: 1.2;
 }
 
-.ideia, .respeito {
+.ideia,
+.respeito {
     font-weight: 550;
     font-size: 27px;
     line-height: 1.2;
 }
+
 .texto {
     font-weight: 300;
     font-size: 18px;
@@ -98,6 +103,7 @@ header {
     color: #706B64;
     max-width: 500px;
 }
+
 .banner-wrapper {
     position: relative;
     display: flex;
@@ -240,27 +246,29 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    .descobrir{
+    .descobrir {
         padding-left: 55px;
     }
+
     .cards-grid {
         justify-content: center;
     }
-    .hero-section{
+
+    .hero-section {
         padding: 50px;
     }
 
-    .conteudo{
+    .conteudo {
         display: flex;
         gap: 30px;
     }
 
-    .frases{
+    .frases {
         display: flex;
         flex-direction: column;
     }
 
-    .section-block{
+    .section-block {
         padding: 50px;
     }
 
@@ -277,9 +285,9 @@ footer {
     .hero-texto {
         width: 50%;
     }
-    
 
-    .conteudo{
+
+    .conteudo {
         gap: 430px;
     }
 
@@ -295,7 +303,7 @@ footer {
         width: 300px;
     }
 
-    footer{
+    footer {
         display: flex;
         justify-content: space-around;
     }
