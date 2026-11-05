@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F4EE;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.senai {
+    height: 23px;
+    width: auto;
+}
+
+.linha {
+    height: 20px;
+    width: auto;
+}
+
+.menu {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.biblioteca {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.bisenai, .descobrir, .lugares, .cuidado {
+    font-weight: 1000;
+    color: #DA251C;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.conhecimento{
+    font-weight: 550;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.ideia, .respeito {
+    font-weight: 550;
+    font-size: 27px;
+    line-height: 1.2;
+}
+.texto {
+    font-weight: 300;
+    font-size: 18px;
+    color: #706B64;
+    max-width: 350px;
+}
+
+.duas {
+    font-weight: 300;
+    font-size: 18px;
+    color: #706B64;
+    max-width: 500px;
+}
+.banner-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.foto {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    height: auto;
+}
+
+.quadrado {
+    position: absolute;
+    background-color: #CE1415;
+    height: 286px;
+    width: 214px;
+    z-index: 1;
+    transform: translate(-15px, -15px);
+}
+
+.section-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+}
+
+.card-item {
+    background-color: white;
+    width: 250px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 12px;
+}
+
+.card-titulo {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.card-descricao {
+    color: #706B64;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+}
+
+.destaque-titulo {
+    font-weight: 1000;
+    font-size: 20px;
+    color: #DA251C;
+}
+
+footer {
+    background-color: #2A2824;
+    color: #FFFFFF;
+    padding: 40px 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-linha-vertical {
+    width: 1px;
+    height: 20px;
+    background-color: #706B64;
+}
+
+.footer-biblioteca {
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.footer-texto {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #E2DFD8;
+    font-weight: 300;
+    max-width: 400px;
+}
+
+.footer-divisor {
+    border: none;
+    border-top: 1px solid #4A4640;
+}
+
+.footer-horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-subtitulo {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #A09B93;
+}
+
+.footer-dias {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-horas {
+    font-size: 14px;
+    color: #E2DFD8;
+    font-weight: 300;
+}
+
+.footer-intervalo {
+    font-size: 13px;
+    color: #A09B93;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+    .descobrir{
+        padding-left: 55px;
+    }
+    .cards-grid {
+        justify-content: center;
+    }
+    .hero-section{
+        padding: 50px;
+    }
+
+    .conteudo{
+        display: flex;
+        gap: 30px;
+    }
+
+    .frases{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-block{
+        padding: 50px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .hero-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .hero-texto {
+        width: 50%;
+    }
+    
+
+    .conteudo{
+        gap: 430px;
+    }
+
+    .conhecimento {
+        font-size: 48px;
+    }
+
+    .cards-grid {
+        justify-content: center;
+    }
+
+    .card-item {
+        width: 300px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+}
