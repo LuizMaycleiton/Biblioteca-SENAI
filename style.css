@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
     background-color: #F7F4EE;
     width: 100%;
@@ -21,6 +26,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+nav{
+    display: flex;
+    gap: 26px;
+}
+
+nav a{
+    color: red;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .header-logo {
