@@ -8,7 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
     background-color: #F7F4EE;
     width: 100%;
@@ -26,18 +25,64 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 100;
 }
 
-nav{
+nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav.active {
     display: flex;
-    gap: 26px;
 }
 
-nav a{
+nav a {
     color: red;
     text-decoration: none;
     font-weight: 700;
     font-size: 14px;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-toggle span {
+    width: 100%;
+    height: 3px;
+    background-color: #DA251C;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
 }
 
 .header-logo {
@@ -81,8 +126,6 @@ nav a{
     flex-direction: column;
     gap: 15px;
 }
-
-
 
 .bisenai,
 .descobrir,
@@ -174,10 +217,11 @@ nav a{
     transition: 0.5s;
 }
 
-.card-item:hover{
+.card-item:hover {
     border: solid 2px red;
     transform: scale(1.05);
 }
+
 .card-titulo {
     font-weight: bold;
     text-align: center;
@@ -293,10 +337,24 @@ footer {
     .section-block {
         padding: 50px;
     }
-
 }
 
 @media screen and (min-width: 992px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        background-color: transparent;
+        padding: 0;
+        gap: 26px;
+        box-shadow: none;
+    }
+
     .hero-section {
         flex-direction: row;
         justify-content: space-between;
@@ -307,7 +365,6 @@ footer {
     .hero-texto {
         width: 50%;
     }
-
 
     .conteudo {
         gap: 430px;
@@ -329,6 +386,4 @@ footer {
         display: flex;
         justify-content: space-around;
     }
-
-
 }
